@@ -78,3 +78,308 @@ Migrating to CreateUsers (20221114224938)
   [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1060565693223583050)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/new" for ::1 at 2022-11-14 15:13:39 -0800
+
+ActiveRecord::NoDatabaseError - We could not find your database: ninety_nine_cats2_long_practice_development. Which can be found in the database configuration file located at config/database.yml.
+To resolve this issue:
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+To create your database, run:
+        bin/rails db:create:
+
+Started POST "/__better_errors/82802b34fc31202a/variables" for ::1 at 2022-11-14 15:13:40 -0800
+  [1m[35m (583.5ms)[0m  [1m[35mCREATE DATABASE "ninety_nine_cats2_long_practice_development" ENCODING = 'unicode'[0m
+  [1m[35m (304.1ms)[0m  [1m[35mCREATE DATABASE "ninety_nine_cats2_long_practice_test" ENCODING = 'unicode'[0m
+  [1m[35m (14.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (49.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1060565693223583050)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCats (20220301202033)
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (22.5ms)[0m  [1m[35mCREATE TABLE "cats" ("id" bigserial primary key, "birth_date" date NOT NULL, "color" character varying NOT NULL, "name" character varying NOT NULL, "sex" character varying(1) NOT NULL, "description" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (23.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220301202033"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCatRentalRequests (20220302053135)
+  [1m[36mTRANSACTION (31.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (233.0ms)[0m  [1m[35mCREATE TABLE "cat_rental_requests" ("id" bigserial primary key, "cat_id" bigint NOT NULL, "start_date" date NOT NULL, "end_date" date NOT NULL, "status" character varying DEFAULT 'PENDING' NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_9c8580551f"
+FOREIGN KEY ("cat_id")
+  REFERENCES "cats" ("id")
+)[0m
+  [1m[35m (47.1ms)[0m  [1m[35mCREATE INDEX "index_cat_rental_requests_on_cat_id" ON "cat_rental_requests" ("cat_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (74.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220302053135"]]
+  [1m[36mTRANSACTION (32.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20221114224938)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_username" ON "users" ("username")[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_session_token" ON "users" ("session_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221114224938"]]
+  [1m[36mTRANSACTION (10.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (25.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-14 23:14:13.410187"], ["updated_at", "2022-11-14 23:14:13.410187"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1060565693223583050)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/new" for ::1 at 2022-11-14 15:14:25 -0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 37.9ms | Allocations: 503)
+  Rendered layout layouts/application.html.erb (Duration: 198.7ms | Allocations: 8859)
+Completed 200 OK in 333ms (Views: 227.3ms | ActiveRecord: 9.7ms | Allocations: 15902)
+
+
+Started POST "/users" for ::1 at 2022-11-14 15:14:48 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"will", "password"=>"[FILTERED]"}}
+  Rendering layout layouts/application.html.erb
+  Rendering users/create.html.erb within layouts/application
+  Rendered users/create.html.erb within layouts/application (Duration: 1.1ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1602)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 1968)
+
+
+Started GET "/users/new" for ::1 at 2022-11-14 15:24:52 -0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 19.7ms | Allocations: 503)
+  Rendered layout layouts/application.html.erb (Duration: 169.0ms | Allocations: 4233)
+Completed 200 OK in 246ms (Views: 201.1ms | ActiveRecord: 8.6ms | Allocations: 11271)
+
+
+Started POST "/users" for ::1 at 2022-11-14 15:25:02 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"willam", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (43.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "willam"], ["password_digest", "[FILTERED]"], ["session_token", "[FILTERED]"], ["created_at", "2022-11-14 23:25:02.843326"], ["updated_at", "2022-11-14 23:25:02.843326"]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (22.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 591ms (ActiveRecord: 66.8ms | Allocations: 5831)
+
+
+
+ActiveRecord::NotNullViolation - PG::NotNullViolation: ERROR:  null value in column "session_token" of relation "users" violates not-null constraint
+DETAIL:  Failing row contains (1, willam, $2a$12$kq9oymnlGDiMLEjbLu8AVehjP2d6WjlENvQcN9lVJ6BTT6PP99YvG, null, 2022-11-14 23:25:02.843326, 2022-11-14 23:25:02.843326).:
+  app/controllers/users_controller.rb:10:in `create'
+
+Started POST "/__better_errors/5ee89b1726cd6620/variables" for ::1 at 2022-11-14 15:25:04 -0800
+Started GET "/users/new" for ::1 at 2022-11-14 15:31:18 -0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1622)
+
+
+
+ArgumentError - Range unspecified. Specify the :in, :within, :maximum, :minimum, or :is option.:
+  app/models/user.rb:7:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+Started POST "/__better_errors/4c3046650a2cfff6/variables" for ::1 at 2022-11-14 15:31:19 -0800
+Started GET "/users/new" for ::1 at 2022-11-14 15:31:59 -0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 15.5ms | Allocations: 503)
+  Rendered layout layouts/application.html.erb (Duration: 143.5ms | Allocations: 4256)
+Completed 200 OK in 250ms (Views: 194.7ms | ActiveRecord: 18.2ms | Allocations: 11651)
+
+
+Started POST "/users" for ::1 at 2022-11-14 15:32:05 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"wb", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 554ms (ActiveRecord: 0.0ms | Allocations: 1668)
+
+
+
+NoMethodError - undefined method `[]' for nil:NilClass
+    @user.password = user_params[:user][:password]
+                                       ^^^^^^^^^^^:
+  app/controllers/users_controller.rb:9:in `create'
+
+Started POST "/__better_errors/2000420152778004/variables" for ::1 at 2022-11-14 15:32:07 -0800
+Started GET "/users/new" for ::1 at 2022-11-14 15:32:48 -0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 23.0ms | Allocations: 503)
+  Rendered layout layouts/application.html.erb (Duration: 101.5ms | Allocations: 4233)
+Completed 200 OK in 190ms (Views: 168.5ms | ActiveRecord: 11.6ms | Allocations: 11628)
+
+
+Started POST "/users" for ::1 at 2022-11-14 15:32:55 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"sdfa", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 803ms (ActiveRecord: 0.0ms | Allocations: 4561)
+
+
+
+NoMethodError - undefined method `exist?' for User:Class
+Did you mean?  exists?:
+  app/models/user.rb:44:in `block in generate_unique_session_token'
+  app/models/user.rb:42:in `generate_unique_session_token'
+  app/models/user.rb:35:in `reset_session_token'
+  app/controllers/users_controller.rb:10:in `create'
+
+Started POST "/__better_errors/5a70b7c1d59a7c5a/variables" for ::1 at 2022-11-14 15:32:56 -0800
+Started POST "/users" for ::1 at 2022-11-14 15:33:30 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"sdfa", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (64.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:44:in `block in generate_unique_session_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mUser Exists? (2.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "sdfa"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "sdfa"], ["password_digest", "[FILTERED]"], ["session_token", "[FILTERED]"], ["created_at", "2022-11-14 23:33:31.280695"], ["updated_at", "2022-11-14 23:33:31.280695"]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mTRANSACTION (146.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (40.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "sdfa"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (55.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "[FILTERED]"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 1186ms (ActiveRecord: 330.0ms | Allocations: 13590)
+
+
+Started GET "/session/new" for ::1 at 2022-11-14 15:33:31 -0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 1732)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 2357)
+
+
+Started POST "/users" for ::1 at 2022-11-14 15:34:01 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"will", "password"=>"[FILTERED]"}}
+Started POST "/users" for ::1 at 2022-11-14 15:34:01 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"will", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:44:in `block in generate_unique_session_token'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mUser Exists? (11.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "will"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "will"], ["password_digest", "[FILTERED]"], ["session_token", "[FILTERED]"], ["created_at", "2022-11-14 23:34:03.193557"], ["updated_at", "2022-11-14 23:34:03.193557"]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (2.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "will"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "[FILTERED]"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 1647ms (ActiveRecord: 21.7ms | Allocations: 8102)
+
+
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:44:in `block in generate_unique_session_token'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "will"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:36:in `reset_session_token'
+Completed 422 Unprocessable Entity in 1598ms (ActiveRecord: 3.8ms | Allocations: 13951)
+
+
+
+ActiveRecord::RecordInvalid - Validation failed: Username has already been taken:
+  app/models/user.rb:36:in `reset_session_token'
+  app/controllers/users_controller.rb:10:in `create'
+
+Started POST "/__better_errors/7221c70c088e87a8/variables" for ::1 at 2022-11-14 15:34:03 -0800
+Started POST "/users" for ::1 at 2022-11-14 15:34:13 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"willy", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:44:in `block in generate_unique_session_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mUser Exists? (7.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "willy"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mUser Create (6.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "willy"], ["password_digest", "[FILTERED]"], ["session_token", "[FILTERED]"], ["created_at", "2022-11-14 23:34:13.766390"], ["updated_at", "2022-11-14 23:34:13.766390"]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "willy"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "[FILTERED]"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 786ms (ActiveRecord: 24.9ms | Allocations: 7078)
+
+
+Started GET "/session/new" for ::1 at 2022-11-14 15:34:13 -0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 1457)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 1718)
+
+
+Started POST "/session" for ::1 at 2022-11-14 15:34:21 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"username"=>"willy", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "willy"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:13:in `find_by_credentials'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:44:in `block in generate_unique_session_token'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mUser Exists? (9.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "willy"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mUser Exists? (7.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "[FILTERED]"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mUser Update (32.3ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "[FILTERED]"], ["updated_at", "2022-11-14 23:34:22.197894"], ["id", 4]]
+  ↳ app/models/user.rb:36:in `reset_session_token'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:36:in `reset_session_token'
+Redirected to http://localhost:3000/cats
+Completed 302 Found in 637ms (ActiveRecord: 65.6ms | Allocations: 5283)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 15:34:22 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (1.9ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 93.8ms | Allocations: 4249)
+  Rendered layout layouts/application.html.erb (Duration: 96.8ms | Allocations: 5769)
+Completed 200 OK in 107ms (Views: 66.5ms | ActiveRecord: 32.0ms | Allocations: 7759)
+
+

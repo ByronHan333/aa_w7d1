@@ -1,14 +1,14 @@
 class User < ApplicationRecord
+  attr_reader :password
+
+  validates :username, uniqueness: true, presence: true
+  validates :session_token, uniqueness: true, presence: true
+  validates :password_digest, presence: true
+  validates :password, length: {minimum: 6}, allow_nil: true
+
+  before_validation :ensure_session_token
+
   def self.find_by_credentials(username, password)
-    validates :username, uniqueness: true, presence: true
-    validates :session_token, uniqueness: true, presence: true
-    validates :password_digest, presence: true
-    validates :password, {length: 6, allow_nil: true}
-
-    attr_reader :password
-
-    before_validation :ensure_session_token
-
 
     user = User.find_by(username: username)
 
@@ -38,11 +38,10 @@ class User < ApplicationRecord
   end
 
   private
-
   def generate_unique_session_token
     loop do
       token = SecureRandom::urlsafe_base64(16)
-      return token unless User.exist?(session_token: token)
+      return token unless User.exists?(session_token: token)
     end
   end
 
