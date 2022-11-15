@@ -1,21 +1,29 @@
 class SessionsController < ApplicationController
+  # before_action
   def new
+    # if logged_in?
+    #   logout
+    # end
     @user = User.new
     render :new
   end
 
   def create
-    @user = User.find_by_credentials(params[:user][:username], params[:user][:password])
-
-    if @user
-      login(@user)
-      redirect_to cats_url
-    else
-      render :new
-    end
+    login!
   end
 
-  def destroy
+  # def print_session
 
+  # def show
+  #   s = ''
+  #   session.each do |k,v|
+  #     s += "#{k}, #{v} \n"
+  #   end
+  #   render json: s.to_json
+  # end
+
+  def destroy
+    logout
+    redirect_to new_session_url
   end
 end

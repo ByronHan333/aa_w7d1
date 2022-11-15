@@ -1,4 +1,16 @@
 class ApplicationController < ActionController::Base
+  helper_method :current_user, :logged_in?
+
+  before_action :require_logged_out
+
+  def require_logged_out
+    unless logged_out?
+      redirect_to cats_url
+      return
+    end
+    redirect_to new_session_url
+  end
+
   # C
   def current_user
     @current_user ||= User.find_by(session_token: session[:session_token])
@@ -21,12 +33,24 @@ class ApplicationController < ActionController::Base
 
   # L
   def login(user)
-    session[:session_token] = user.reset_session_token
+    session[:session_token] = user.reset_session_token!
+  end
+
+  def login!
+    # after user sign up , no need to sign in again
+    @user = User.find_by_credentials(params[:user][:username], params[:user][:password])
+
+    if @user
+      login(@user)
+      redirect_to cats_url
+    else
+      render :new
+    end
   end
 
   # L
   def logout
-    current_user.reset_session_token if logged_in?
+    current_user.reset_session_token! if logged_in?
     session[:session_token] = nil
     @current_user = nil
   end

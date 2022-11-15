@@ -14,6 +14,20 @@
   <body>
     <nav class="main-nav">
       <h1><a href="<%= cats_url %>">99 Cats</a></h1>
+      <% if logged_in? %>
+        <form action="<%= session_url%>" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <label><%= current_user.username %>
+        <input type = "submit" value="Log Out">
+        </label>
+        </form>
+
+      <% else %>
+        <form action="<%= new_session_url%>" method="GET">
+        <input type = "submit" value="Log In">
+        </form>
+
+      <% end %>
     </nav>
     <main>
       <%= yield %>

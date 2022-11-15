@@ -7,10 +7,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     @user.password = params[:user][:password]
-    @user.reset_session_token
+    @user.reset_session_token!
 
     if @user.save
-      redirect_to new_session_url
+      login!
+      # redirect_to new_session_url
     else
       redirect_to new_user_url
     end
@@ -22,4 +23,3 @@ class UsersController < ApplicationController
     params.require(:user).permit(:username, :password)
   end
 end
-
