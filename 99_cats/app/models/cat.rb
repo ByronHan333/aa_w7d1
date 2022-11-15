@@ -10,6 +10,7 @@
 #  description :text
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  owner_id    :bigint           not null
 #
 require 'action_view'
 
@@ -25,6 +26,10 @@ class Cat < ApplicationRecord
   # NULL values for those columns will fail the inclusion tests.
   validates :birth_date, :name, presence: true
   validate :birth_date_cannot_be_future
+
+  belongs_to :owner,
+    class_name: :User,
+    foreign_key: :owner_id
 
   # Remember: `has_many` is just a method where the first argument is the name
   # of the association and the second argument is an options hash.

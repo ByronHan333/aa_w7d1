@@ -13,7 +13,6 @@ class UsersController < ApplicationController
 
     if @user.save
       login!
-      # redirect_to new_session_url
     else
       redirect_to new_user_url
     end

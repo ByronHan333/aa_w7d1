@@ -52,4 +52,12 @@ class ApplicationController < ActionController::Base
     session[:session_token] = nil
     @current_user = nil
   end
+
+
+  def require_owned_cat
+    @cat = Cat.find(params[:id])
+    # puts @cat.owner_id
+    # puts current_user.id
+    redirect_to new_session_url unless @cat.owner_id == current_user.id
+  end
 end
