@@ -1559,3 +1559,1809 @@ Started GET "/users" for ::1 at 2022-11-14 16:33:58 -0800
   
 ActionController::RoutingError (No route matches [GET] "/users"):
   
+Started GET "/users/new" for ::1 at 2022-11-14 16:36:39 -0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/users
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 3.6ms | Allocations: 9040)
+
+
+Started GET "/users" for ::1 at 2022-11-14 16:36:39 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for ::1 at 2022-11-14 16:38:21 -0800
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/users
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 2.6ms | Allocations: 3966)
+
+
+Started GET "/users" for ::1 at 2022-11-14 16:38:21 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for ::1 at 2022-11-14 16:38:33 -0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/users
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 19ms (ActiveRecord: 3.7ms | Allocations: 9059)
+
+
+Started GET "/users" for ::1 at 2022-11-14 16:38:33 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for ::1 at 2022-11-14 16:38:35 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for ::1 at 2022-11-14 16:38:37 -0800
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/users
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms | Allocations: 1019)
+
+
+Started GET "/users" for ::1 at 2022-11-14 16:38:37 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/session/new" for ::1 at 2022-11-14 16:38:41 -0800
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/users
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1119)
+
+
+Started GET "/users" for ::1 at 2022-11-14 16:38:42 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for ::1 at 2022-11-14 16:38:49 -0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 225)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4752)
+Completed 200 OK in 23ms (Views: 11.7ms | ActiveRecord: 2.6ms | Allocations: 8271)
+
+
+Started GET "/users/new" for ::1 at 2022-11-14 16:39:27 -0800
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/users
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms | Allocations: 3938)
+
+
+Started GET "/users" for ::1 at 2022-11-14 16:39:27 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for ::1 at 2022-11-14 16:39:46 -0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/users
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 3.7ms | Allocations: 9061)
+
+
+Started GET "/users" for ::1 at 2022-11-14 16:39:46 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for ::1 at 2022-11-14 16:40:20 -0800
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 2.4ms | Allocations: 3968)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1099)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 900)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 894)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 867)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 876)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 900)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 867)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:21 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 930)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 873)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 873)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 894)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 873)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 903)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 870)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:22 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 912)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 870)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 870)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 870)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 894)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:27 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 900)
+
+
+Started GET "/users/new" for ::1 at 2022-11-14 16:40:28 -0800
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:28 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 870)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 14ms (ActiveRecord: 0.3ms | Allocations: 864)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 876)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 894)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:29 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 903)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 903)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 894)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 870)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 867)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 897)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 906)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 897)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:30 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 897)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 876)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 897)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 903)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 915)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms | Allocations: 897)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 873)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:40:35 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 912)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 2.5ms | Allocations: 3998)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms | Allocations: 864)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 873)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 870)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 873)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 897)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 897)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 879)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 897)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 894)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:41:05 -0800
+Processing by CatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/users/new" for ::1 at 2022-11-14 16:42:09 -0800
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 227)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3567)
+Completed 200 OK in 17ms (Views: 8.3ms | ActiveRecord: 2.2ms | Allocations: 8203)
+
+
+Started GET "/users/new" for ::1 at 2022-11-14 16:42:51 -0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 4.0ms | Allocations: 9055)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:42:51 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.6ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1378)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 5588)
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 0.8ms | Allocations: 9219)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:42:58 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1121)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:42:58 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 661)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2582)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.5ms | Allocations: 2843)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:43:00 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 891)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:43:00 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 628)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2413)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 2624)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:43:00 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 918)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:43:00 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 628)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2443)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 2654)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:43:01 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 876)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:43:01 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 628)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2418)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 2628)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:43:01 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 903)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:43:01 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 628)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2412)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 2622)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:43:01 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 882)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:43:01 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 628)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2433)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 2643)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:43:02 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 900)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:43:02 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 628)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2416)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 2627)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:43:06 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 888)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:43:06 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 628)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2403)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 2613)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:43:06 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 894)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:43:06 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 628)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2425)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 2635)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:43:07 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 900)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:43:07 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 628)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2412)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 2622)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:43:07 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:43:07 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 628)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2410)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 2620)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:43:15 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:43:15 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 628)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2415)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 2625)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:43:15 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 906)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:43:15 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 628)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2397)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 2607)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:45:10 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 815)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5638)
+Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 2.7ms | Allocations: 7383)
+
+
+Started DELETE "/session" for ::1 at 2022-11-14 16:45:11 -0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:44:in `block in generate_unique_session_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:36:in `reset_session_token!'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "user"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token!'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "[FILTERED]"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token!'
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "[FILTERED]"], ["updated_at", "2022-11-15 00:45:11.300576"], ["id", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token!'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:36:in `reset_session_token!'
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 13ms (ActiveRecord: 3.2ms | Allocations: 6865)
+
+
+Started GET "/session/new" for ::1 at 2022-11-14 16:45:11 -0800
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 219)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2170)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 3634)
+
+
+Started POST "/session" for ::1 at 2022-11-14 16:45:16 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"username"=>"user", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:13:in `find_by_credentials'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:44:in `block in generate_unique_session_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:36:in `reset_session_token!'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "user"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token!'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "[FILTERED]"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token!'
+  [1m[36mUser Update (0.2ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "[FILTERED]"], ["updated_at", "2022-11-15 00:45:16.869431"], ["id", 1]]
+  ↳ app/models/user.rb:36:in `reset_session_token!'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:36:in `reset_session_token!'
+Redirected to http://localhost:3000/cats
+Completed 302 Found in 214ms (ActiveRecord: 2.1ms | Allocations: 5724)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:45:16 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.1ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 631)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2422)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 2653)
+
+
+Started GET "/cats/new" for ::1 at 2022-11-14 16:45:19 -0800
+Processing by CatsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.7ms | Allocations: 418)
+  Rendered cats/_form.html.erb (Duration: 0.8ms | Allocations: 504)
+  Rendered cats/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1332)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2898)
+Completed 200 OK in 14ms (Views: 6.2ms | ActiveRecord: 2.6ms | Allocations: 6507)
+
+
+Started GET "/users/new" for ::1 at 2022-11-14 16:45:27 -0800
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+Redirected to http://localhost:3000/cats
+Filter chain halted as :require_logged_out rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1112)
+
+
+Started GET "/cats" for ::1 at 2022-11-14 16:45:27 -0800
+Processing by CatsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:14
+  Rendered cats/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 661)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2594)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 2852)
+
+

@@ -1,4 +1,8 @@
 class SessionsController < ApplicationController
+  before_action :require_logged_out, only: [:new, :create]
+  # skip_before_action :require_logged_out, only: [:destroy]
+
+
   # before_action
   def new
     # if logged_in?

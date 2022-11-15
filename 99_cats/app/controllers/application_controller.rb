@@ -1,15 +1,13 @@
 class ApplicationController < ActionController::Base
   helper_method :current_user, :logged_in?
 
-  before_action :require_logged_out
-
-  def require_logged_out
-    unless logged_out?
-      redirect_to cats_url
-      return
-    end
-    redirect_to new_session_url
-  end
+  # def require_logged_out
+  #   if logged_in?
+  #     redirect_to cats_url
+  #     # return
+  #   end
+  #   # redirect_to new_session_url
+  # end
 
   # C
   def current_user
@@ -23,7 +21,7 @@ class ApplicationController < ActionController::Base
 
   # R
   def require_logged_out
-    redirect_to users_url if logged_in?
+    redirect_to cats_url if logged_in?
   end
 
   # L
